@@ -38,14 +38,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="D3uATF5dbcEVA1TuBrMH-19" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-18" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="D3uATF5dbcEVA1TuBrMH-20" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Ja" vertex="1">
-          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-22" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-21" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -58,17 +50,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="D3uATF5dbcEVA1TuBrMH-9" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="3 misslyckade försök" vertex="1">
-          <mxGeometry height="70" width="70" x="450" y="290" as="geometry" />
-        </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-25" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-24" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Skriv ut menyalternativ" vertex="1">
           <mxGeometry height="50" width="110" x="325" y="390" as="geometry" />
-        </mxCell>
-        <mxCell id="D3uATF5dbcEVA1TuBrMH-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="Slut" vertex="1">
-          <mxGeometry height="60" width="60" x="560" y="295" as="geometry" />
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-21" parent="1" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" value="" vertex="1">
           <mxGeometry height="20" width="20" x="430" y="220" as="geometry" />
@@ -210,11 +196,31 @@
         <mxCell id="D3uATF5dbcEVA1TuBrMH-59" parent="D3uATF5dbcEVA1TuBrMH-61" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Inloggnings meny" vertex="1">
           <mxGeometry height="30" width="60" x="360" y="20" as="geometry" />
         </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-68" parent="D3uATF5dbcEVA1TuBrMH-61" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="InloggMeny();" vertex="1">
+          <mxGeometry height="30" width="90" x="345" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-9" parent="D3uATF5dbcEVA1TuBrMH-61" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="3 misslyckade försök" vertex="1">
+          <mxGeometry height="70" width="70" x="160" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-18" parent="D3uATF5dbcEVA1TuBrMH-61" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="Slut" vertex="1">
+          <mxGeometry height="60" width="60" x="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-19" edge="1" parent="D3uATF5dbcEVA1TuBrMH-61" source="D3uATF5dbcEVA1TuBrMH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-20" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Ja" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-62" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
           <mxGeometry height="260" width="561.25" x="218.75" y="380" as="geometry" />
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-63" parent="D3uATF5dbcEVA1TuBrMH-62" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Val meny" vertex="1">
           <mxGeometry height="30" width="60" x="481.25" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-69" parent="D3uATF5dbcEVA1TuBrMH-62" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ValMeny();" vertex="1">
+          <mxGeometry height="30" width="77.5" x="472.5" y="50" as="geometry" />
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bank&amp;nbsp; funktion" vertex="1">
           <mxGeometry height="30" width="60" x="720" y="100" as="geometry" />
@@ -242,6 +248,27 @@
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Rätt inlogg?" vertex="1">
           <mxGeometry height="70" width="70" x="344" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="VisaKonton();" vertex="1">
+          <mxGeometry height="30" width="90" x="369" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Overforing();" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TaUt();" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User Klass: string namn, int kod, list&amp;lt;konton&amp;gt;&amp;nbsp;" vertex="1">
+          <mxGeometry height="40" width="310" x="100" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Konto Klass: string namn, int saldo" vertex="1">
+          <mxGeometry height="40" width="255" x="100" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bank Klass: list&amp;lt;User&amp;gt;&lt;br&gt;&quot;funktioner&quot;" vertex="1">
+          <mxGeometry height="50" width="180" x="100" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fel Klass: &quot;funktioner&quot;" vertex="1">
+          <mxGeometry height="40" width="180" x="100" y="1100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
