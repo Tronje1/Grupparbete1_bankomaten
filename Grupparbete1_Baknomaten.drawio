@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Sida-1" id="xLIfTJWwytRogdsc_jvr">
-    <mxGraphModel dx="2175" dy="1195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1178" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -261,7 +261,7 @@
         <mxCell id="D3uATF5dbcEVA1TuBrMH-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User Klass: string namn, int kod, list&amp;lt;konton&amp;gt;&amp;nbsp;" vertex="1">
           <mxGeometry height="40" width="310" x="100" y="940" as="geometry" />
         </mxCell>
-        <mxCell id="D3uATF5dbcEVA1TuBrMH-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Konto Klass: string namn, int saldo" vertex="1">
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Konto Klass: string namn, int saldo&lt;br&gt;&quot;funktioner&quot;" vertex="1">
           <mxGeometry height="40" width="255" x="100" y="990" as="geometry" />
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bank Klass: list&amp;lt;User&amp;gt;&lt;br&gt;&quot;funktioner&quot;" vertex="1">
@@ -269,12 +269,6 @@
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fel Klass: &quot;funktioner&quot;" vertex="1">
           <mxGeometry height="40" width="180" x="100" y="1100" as="geometry" />
-        </mxCell>
-        <mxCell id="tVXsWDao6JNRNy5PqW2g-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="350" y="550" as="geometry" />
-        </mxCell>
-        <mxCell id="tVXsWDao6JNRNy5PqW2g-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Viktoria" vertex="1">
-          <mxGeometry height="60" width="120" x="649" y="1060" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
