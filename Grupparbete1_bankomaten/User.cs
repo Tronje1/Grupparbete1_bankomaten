@@ -7,9 +7,16 @@ namespace Grupparbete1_bankomaten
     internal class User
     {
         //Lister till namn till brukarna             
-        List<string> names = new List<string> { "user1", "user2", "user3", "user4", "user5" };
+        List<User> bankusers = new List<User> ()
+        { 
+          new User("Ola","1234"),
+          new User("Kari","2345"), 
+          new User("Per","3456"), 
+          new User("Paal","4567"), 
+          new User("Hans","5678") 
+        };
         //Lister till konto information
-        List<string> accounts = new List<string> { "personkonto", "sparkonto", "lönekonto", "speciellkonto" };
+        List<string> accountstype = new List<string> { "personkonto", "sparkonto", "lönekonto", "speciellkonto" };
         //
         
     }
