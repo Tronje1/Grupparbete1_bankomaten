@@ -28,5 +28,12 @@ namespace Grupparbete1_bankomaten
                 Console.WriteLine("Du har inte tillräckligt med pengar.");
             }
         }
+        public void SetIn()
+        {
+            int summa = int.Parse(Console.ReadLine());
+            Saldo += summa;
+            Console.WriteLine($"Du sätte in {summa} kr.");
+            Console.WriteLine($"Nytt saldo: {Saldo} kr");
+        }
     }
 }
