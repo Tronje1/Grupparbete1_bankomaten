@@ -20,12 +20,12 @@ namespace Grupparbete1_bankomaten
         // Detta är konstruktorn. Den körs automatiskt när vi skapar en ny användare.
         public User(string namn, string kod)
         {
-            // Vi sparar namnet som skickades in i klassens egen Namn-variabel.
+            // Sparar namnet som skickades in i klassens egen Namn-variabel.
             this.Namn = namn;
-            // Vi sparar koden som skickades in i klassens egen Kod-variabel.
+            // Sparar koden som skickades in i klassens egen Kod-variabel.
             this.Kod = kod;
 
-            // Vi skapar själva listan i minnet så att vi kan lägga till konton i den.
+            // Skapar själva listan i minnet så att vi kan lägga till konton i den.
             this.Kontoer = new List<Konto>
         {
             // Lönekonto i listan direkt från start.
@@ -42,7 +42,7 @@ namespace Grupparbete1_bankomaten
         // Metod (en funktion) för att kunna lägga till ännu fler konton senare.
         public void LeggTilKonto(string kontoNavn)
         {
-            // Vi lägger till ett nytt konto i listan med det namn som skickas med.
+            // Lägger till ett nytt konto i listan med det namn som skickas med.
             this.Kontoer.Add(new Konto(kontoNavn));
         } 
     } 
