@@ -7,8 +7,7 @@ namespace Grupparbete1_bankomaten
 {
     internal class Account
     {
-        public string AnvändarNamn { get; set; } 
-        public int PinKod { get; set; }
+        public string KontoNamn { get; set; } 
         public decimal Saldo { get; set; }
         public decimal SparSaldo { get; set; }
 
