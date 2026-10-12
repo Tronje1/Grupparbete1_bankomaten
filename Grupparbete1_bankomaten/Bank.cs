@@ -19,15 +19,36 @@ namespace Grupparbete1_bankomaten
         {
             foreach (User user in users)
             {
-                if (User.namn == namn)
+                if (user.namn == namn)
                 {
-                    if (User.kod == kod)
+                    if (user.kod == kod)
                     {
                         return user;
                     }
                 }
             }
             return null;
+        }
+        // Returnerar användaren om uppgifterna stämmer, annars null.
+        public User? HittaUser(string namn)
+        {
+            foreach (User user in users)
+            {
+                if(user.namn == namn)
+                {
+                    return user;
+                }
+            }
+            return null;
+        }
+        // Returnerar true om överföringen lyckades, annars false.
+        public bool OverforPengar(Account fran, Account till, decimal belopp)
+        {
+            if(belopp > 0 && fran.belopp >= belopp)
+            {
+
+            }
+            return false;
         }
     }
 }
