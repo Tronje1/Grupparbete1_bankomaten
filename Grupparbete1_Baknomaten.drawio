@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Sida-1" id="xLIfTJWwytRogdsc_jvr">
-    <mxGraphModel dx="975" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -222,8 +222,8 @@
         <mxCell id="D3uATF5dbcEVA1TuBrMH-69" parent="D3uATF5dbcEVA1TuBrMH-62" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ValMeny();" vertex="1">
           <mxGeometry height="30" width="77.5" x="472.5" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="D3uATF5dbcEVA1TuBrMH-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bank&amp;nbsp; funktion" vertex="1">
-          <mxGeometry height="30" width="60" x="720" y="100" as="geometry" />
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Print funktioner" vertex="1">
+          <mxGeometry height="30" width="60" x="750" y="100" as="geometry" />
         </mxCell>
         <mxCell id="D3uATF5dbcEVA1TuBrMH-65" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-64" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -267,11 +267,14 @@
         <mxCell id="D3uATF5dbcEVA1TuBrMH-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bank Klass: list&amp;lt;User&amp;gt;&lt;br&gt;&quot;funktioner&quot;" vertex="1">
           <mxGeometry height="50" width="180" x="100" y="1040" as="geometry" />
         </mxCell>
-        <mxCell id="D3uATF5dbcEVA1TuBrMH-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fel Klass: &quot;funktioner&quot;" vertex="1">
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Error handler: &quot;funktioner&quot;" vertex="1">
           <mxGeometry height="40" width="180" x="100" y="1100" as="geometry" />
         </mxCell>
-        <mxCell id="R9ir9NB0GTlHDDkgVuvW-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Utskrivar Klass: &quot;funktioner&quot;" vertex="1">
+        <mxCell id="R9ir9NB0GTlHDDkgVuvW-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Printer Klass: &quot;funktioner&quot;" vertex="1">
           <mxGeometry height="50" width="180" x="294" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="Pa0FaDeZFmlFN2FOJuwZ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Input helper:&amp;nbsp;" vertex="1">
+          <mxGeometry height="40" width="201" x="369" y="990" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
