@@ -1,20 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml.Linq;
 
 namespace Grupparbete1_bankomaten
 {
     internal class Account
     {
-        public string AnvändarNamn { get; set; }
+        public string AnvändarNamn { get; set; } 
         public int PinKod { get; set; }
-        public int Saldo { get; set; }
+        public decimal Saldo { get; set; }
+        public decimal SparSaldo { get; set; }
 
-        public void VisaKonton()
+        public void VisaKonton() // visar hur mycket pengar du har,
         {
-            Console.WriteLine($"Du har {Saldo} kr på kontot");
+            Console.WriteLine($"Du har {Saldo} kr i dit kontot");
+            Console.WriteLine($"Du har {SparSaldo} kr i dit sparkontot");
         }
-        public void TaUt()
+        public void TaUt() // låter deig ta ut pengar.
         {
             int summa = int.Parse(Console.ReadLine());
             if (summa <= Saldo)
@@ -23,17 +26,66 @@ namespace Grupparbete1_bankomaten
                 Console.WriteLine($"Du tog ut {summa} kr.");
                 Console.WriteLine($"Nytt saldo: {Saldo} kr");
             }
-            else if (summa > Saldo)
+            else if (summa > Saldo) // om du inte har tillräckligt med pengar.
             {
                 Console.WriteLine("Du har inte tillräckligt med pengar.");
             }
         }
-        public void SetIn()
+        public void SetIn() // låter dig sätta in pengar.
         {
             int summa = int.Parse(Console.ReadLine());
             Saldo += summa;
             Console.WriteLine($"Du sätte in {summa} kr.");
             Console.WriteLine($"Nytt saldo: {Saldo} kr");
+        }
+        public void TTF() // låter dig välja att föröver mellan spar och privat konto (TTF() är inte nödvändig)
+        {
+            string vall = Console.ReadLine();
+            switch (vall)
+            {
+                case "1":
+                    SpaSaldo();
+                    break;
+                case "2":
+                    SaldoSpar();
+                    break;
+                default:
+                    Console.WriteLine("Felaktig inmatning");
+                    break;
+            }
+
+        }
+        public bool SpaSaldo() // låter dig föra över mellan spar till pivat.
+        {
+            Console.Write("Hur mycket vill du förra övar?");
+            int summa = int.Parse(Console.ReadLine());
+            if (summa > Saldo)
+            {
+                Console.WriteLine("Du har inte tillräckligt med pengar.");
+                return false;
+            }
+            Saldo += summa;
+            SparSaldo -= summa;
+            Console.WriteLine($"Du tog ut {summa} kr.");
+            Console.WriteLine($"Nytt saldo: {Saldo} kr");
+            Console.WriteLine($"Nytt Spar saldo: {SparSaldo} kr");
+            return true;
+        }
+        public bool SaldoSpar()// låter dig föra över mellan privat till spar.
+        {
+            Console.Write("Hur mycket vill du förra övar?");
+            int summa = int.Parse(Console.ReadLine());
+            if (summa > Saldo)
+            {
+                Console.WriteLine("Du har inte tillräckligt med pengar.");
+                return false;
+            }
+            Saldo -= summa;
+            SparSaldo += summa;
+            Console.WriteLine($"Du tog ut {summa} kr.");
+            Console.WriteLine($"Nytt saldo: {Saldo} kr");
+            Console.WriteLine($"Nytt Spar saldo: {SparSaldo} kr");
+            return true;
         }
     }
 }
