@@ -44,7 +44,7 @@ namespace Grupparbete1_bankomaten
         // Returnerar true om överföringen lyckades, annars false.
         public bool OverforPengar(Account fran, Account till, decimal belopp)
         {
-            if(belopp > 0 && fran.belopp >= belopp)
+            if(belopp > 0 && fran.saldo >= belopp)
             {
 
             }
