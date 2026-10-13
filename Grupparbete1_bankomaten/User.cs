@@ -12,13 +12,13 @@ namespace Grupparbete1_bankomaten
         public string Namn { get; set; }
 
         // Variabel som ska hålla användarens kod (lösenord).
-        public string Kod { get; set; }
+        public int Kod { get; set; }
 
         // Lista som ska hålla reda på alla användarens konton.
         public List<Konto> Kontoer { get; set; }
 
         // Detta är konstruktorn. Den körs automatiskt när vi skapar en ny användare.
-        public User(string namn, string kod)
+        public User(string namn, int kod)
         {
             // Sparar namnet som skickades in i klassens egen Namn-variabel.
             this.Namn = namn;
@@ -35,7 +35,7 @@ namespace Grupparbete1_bankomaten
             new Konto("Brukskonto"),
 
             // Sparkonto i listan direkt från start.
-            new Konto("Sparkonto")
+            new Konto("Sparkonto"),
         }; // Här stängs listan.
         }
 
@@ -48,6 +48,7 @@ namespace Grupparbete1_bankomaten
     } 
 
     // Separat klass "Konto" (en mall för hur ett konto ser ut).
+    /* raderat för att göra om i account.cs som var avtalt i teammöte den 12.10.2026
     public class Konto
     {
         // Varje konto måste ha ett namn (t.ex. "Sparkonto").
@@ -65,7 +66,7 @@ namespace Grupparbete1_bankomaten
             // Startpengarna på kontot till 0 kronor.
             Saldo = 0.0m;
         } 
-    } 
+    }*/ 
 
 
 
