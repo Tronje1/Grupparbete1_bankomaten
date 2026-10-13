@@ -27,7 +27,7 @@ namespace Grupparbete1_bankomaten
             }
             else if (summa > Saldo) // om du inte har tillräckligt med pengar.
             {
-                Console.WriteLine("Du har inte tillräckligt med pengar.");
+                ErrorHandler.Show(ErrorHandler.InvalidAmount);
             }
         }
         public void SetIn() // låter dig sätta in pengar.
@@ -49,7 +49,7 @@ namespace Grupparbete1_bankomaten
                     SaldoSpar();
                     break;
                 default:
-                    Console.WriteLine("Felaktig inmatning");
+                    ErrorHandler.Show(ErrorHandler.InvalidChoice);
                     break;
             }
 
@@ -60,7 +60,7 @@ namespace Grupparbete1_bankomaten
             int summa = int.Parse(Console.ReadLine());
             if (summa > Saldo)
             {
-                Console.WriteLine("Du har inte tillräckligt med pengar.");
+                ErrorHandler.Show(ErrorHandler.InvalidAmount);
                 return false;
             }
             Saldo += summa;
@@ -76,7 +76,7 @@ namespace Grupparbete1_bankomaten
             int summa = int.Parse(Console.ReadLine());
             if (summa > Saldo)
             {
-                Console.WriteLine("Du har inte tillräckligt med pengar.");
+                ErrorHandler.Show(ErrorHandler.InvalidAmount);
                 return false;
             }
             Saldo -= summa;
