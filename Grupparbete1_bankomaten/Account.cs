@@ -11,6 +11,13 @@ namespace Grupparbete1_bankomaten
         public decimal Saldo { get; set; }
         public decimal SparSaldo { get; set; }
 
+        public Account(string hontonamn, decimal saldo)
+        {
+            this.KontoNamn = hontonamn;
+
+            this.Saldo = saldo;
+        }
+
         public void VisaKonton() // visar hur mycket pengar du har,
         {
             Console.WriteLine($"Du har {Saldo} kr i dit kontot");
