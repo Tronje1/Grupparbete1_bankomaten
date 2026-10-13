@@ -12,13 +12,13 @@ namespace Grupparbete1_bankomaten
         public string Namn { get; set; }
 
         // Variabel som ska hålla användarens kod (lösenord).
-        public string Kod { get; set; }
+        public int Kod { get; set; }
 
         // Lista som ska hålla reda på alla användarens konton.
         public List<Konto> Kontoer { get; set; }
 
         // Detta är konstruktorn. Den körs automatiskt när vi skapar en ny användare.
-        public User(string namn, string kod)
+        public User(string namn, int kod)
         {
             // Sparar namnet som skickades in i klassens egen Namn-variabel.
             this.Namn = namn;
