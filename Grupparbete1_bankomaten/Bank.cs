@@ -19,9 +19,9 @@ namespace Grupparbete1_bankomaten
         {
             foreach (User user in users)
             {
-                if (user.namn == namn)
+                if (user.Namn == namn)
                 {
-                    if (user.kod == kod)
+                    if (user.Kod == kod)
                     {
                         return user;
                     }
@@ -34,7 +34,7 @@ namespace Grupparbete1_bankomaten
         {
             foreach (User user in users)
             {
-                if(user.namn == namn)
+                if(user.Namn == namn)
                 {
                     return user;
                 }
@@ -44,7 +44,7 @@ namespace Grupparbete1_bankomaten
         // Returnerar true om överföringen lyckades, annars false.
         public bool OverforPengar(Account fran, Account till, decimal belopp)
         {
-            if(belopp > 0 && fran.saldo >= belopp)
+            if(belopp > 0 && fran.Saldo >= belopp)
             {
 
             }
