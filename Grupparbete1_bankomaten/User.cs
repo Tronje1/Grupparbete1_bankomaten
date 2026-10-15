@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Grupparbete1_bankomaten
 {
-    public class User
+    internal class User
     {
         // Variabel (egenskap) som ska hålla användarens namn.
         public string Namn { get; set; }
@@ -15,10 +15,10 @@ namespace Grupparbete1_bankomaten
         public int Kod { get; set; }
 
         // Lista som ska hålla reda på alla användarens konton.
-        public List<Konto> Kontoer { get; set; }
+        public List<Account> Kontoer { get; set; }
 
         // Detta är konstruktorn. Den körs automatiskt när vi skapar en ny användare.
-        public User(string namn, int kod)
+        internal User(string namn, int kod, List<Account> kontoer)
         {
             // Sparar namnet som skickades in i klassens egen Namn-variabel.
             this.Namn = namn;
@@ -26,24 +26,24 @@ namespace Grupparbete1_bankomaten
             this.Kod = kod;
 
             // Skapar själva listan i minnet så att vi kan lägga till konton i den.
-            this.Kontoer = new List<Konto>
-        {
+            this.Kontoer = kontoer             ;
+            //{
             // Lönekonto i listan direkt från start.
-            new Konto("Lönekonto"),
+            //this.Kontoer.Add(new Account("Lönekonto"));
 
             // Brukskonto i listan direkt från start.
-            new Konto("Brukskonto"),
+            //this.Kontoer.Add(new Account("Brukskonto"));
 
             // Sparkonto i listan direkt från start.
-            new Konto("Sparkonto"),
-        }; // Här stängs listan.
+            //this.Kontoer.Add(new Account("Sparkonto"));
+            //}; // Här stängs listan.
         }
 
         // Metod (en funktion) för att kunna lägga till ännu fler konton senare.
         public void LeggTilKonto(string kontoNavn)
         {
             // Lägger till ett nytt konto i listan med det namn som skickas med.
-            this.Kontoer.Add(new Konto(kontoNavn));
+            new Account(kontoNavn, 0m);
         } 
     } 
 
@@ -123,5 +123,5 @@ namespace Grupparbete1_bankomaten
         
     }
     */
-}
+
 
