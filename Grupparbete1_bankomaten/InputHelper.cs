@@ -6,6 +6,24 @@ namespace Grupparbete1_bankomaten
 {
     public static class InputHelper
     {
+        // Läser en text som inte får vara tom. Används för inloggningsnamnet.
+        public static string ReadText(string prompt)
+        {
+            while (true)
+            {
+                Console.Write(prompt);
+                string? text = Console.ReadLine();
+
+                if (text is null)
+                    Environment.Exit(0);
+
+                text = text.Trim();
+                if (text.Length > 0)
+                    return text;
+
+                ErrorHandler.Show(ErrorHandler.EmptyInput);
+            }
+        }
         public static int ReadNumber(string prompt, int min, int max, string errorMessage)
         {
             while (true)
@@ -15,10 +33,10 @@ namespace Grupparbete1_bankomaten
 
                 if (text is null)
                     Environment.Exit(0);
-                
-                if (int.TryParse(text, out int value)  && value >= min &&  value <= max)
+
+                if (int.TryParse(text, out int value) && value >= min && value <= max)
                     return value;
-                
+
                 ErrorHandler.Show(errorMessage);
             }
         }

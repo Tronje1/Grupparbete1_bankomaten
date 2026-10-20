@@ -7,13 +7,13 @@ namespace Grupparbete1_bankomaten
 {
     internal class Account
     {
-        public string KontoNamn { get; set; } 
+        public string KontoNamn { get; set; }
         public decimal Saldo { get; set; }
         public decimal SparSaldo { get; set; }
 
-        public Account(string hontonamn, decimal saldo)
+        public Account(string kontonamn, decimal saldo)
         {
-            this.KontoNamn = hontonamn;
+            this.KontoNamn = kontonamn;
 
             this.Saldo = saldo;
         }

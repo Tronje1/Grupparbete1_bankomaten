@@ -26,7 +26,7 @@ namespace Grupparbete1_bankomaten
             this.Kod = kod;
 
             // Skapar själva listan i minnet så att vi kan lägga till konton i den.
-            this.Kontoer = kontoer             ;
+            this.Kontoer = kontoer;
             //{
             // Lönekonto i listan direkt från start.
             //this.Kontoer.Add(new Account("Lönekonto"));
@@ -44,8 +44,8 @@ namespace Grupparbete1_bankomaten
         {
             // Lägger till ett nytt konto i listan med det namn som skickas med.
             new Account(kontoNavn, 0m);
-        } 
-    } 
+        }
+    }
 
     // Separat klass "Konto" (en mall för hur ett konto ser ut).
     /* raderat för att göra om i account.cs som var avtalt i teammöte den 12.10.2026
@@ -66,62 +66,60 @@ namespace Grupparbete1_bankomaten
             // Startpengarna på kontot till 0 kronor.
             Saldo = 0.0m;
         } 
-    }*/ 
+    }*/
 
 
 
-}    
-    
-    
-    
-    /* 
-     // tidligare versjon av kod for å test upbygning.
-     
+}
+
+
+
+/* 
+ // tidligare versjon av kod for å test upbygning.
+
 // Enkel definition av User-klassen
-    private List<User> users;
-    { 
-        this.users = users;
-    }
-    public class User
-    {
-        
+private List<User> users;
+{ 
+    this.users = users;
+}
+public class User
+{
 
-        public User? LoggaIn(string namn, int kod)
+
+    public User? LoggaIn(string namn, int kod)
+    {
+        foreach (User user in users)
         {
-            foreach (User user in users)
+            if (User.namn == namn)
             {
-                if (User.namn == namn)
+                if (User.kod == kod)
                 {
-                    if (User.kod == kod)
-                    {
-                        return User;
-                    }
+                    return User;
                 }
+            }
 
 
-            }    
-            return null;
-        }
+        }    
+        return null;
     }
+}
 
 
 
-    /*internal class User
-    {
-        //Lister till namn till brukarna             
-        List<User> bankusers = new List<User> ()
-        { 
-          new User("Ola","1234"),
-          new User("Kari","2345"), 
-          new User("Per","3456"), 
-          new User("Paal","4567"), 
-          new User("Hans","5678") 
-        };
-        //Lister till konto information
-        List<string> accountstype = new List<string> { "personkonto", "sparkonto", "lönekonto", "speciellkonto" };
-        //
-        
-    }
-    */
+/*internal class User
+{
+    //Lister till namn till brukarna             
+    List<User> bankusers = new List<User> ()
+    { 
+      new User("Ola","1234"),
+      new User("Kari","2345"), 
+      new User("Per","3456"), 
+      new User("Paal","4567"), 
+      new User("Hans","5678") 
+    };
+    //Lister till konto information
+    List<string> accountstype = new List<string> { "personkonto", "sparkonto", "lönekonto", "speciellkonto" };
+    //
 
-
+}
+*/
