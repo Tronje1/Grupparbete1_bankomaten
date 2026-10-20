@@ -29,5 +29,26 @@ namespace Grupparbete1_bankomaten
             }
             return null;
         }
+        // Returnerar användaren om uppgifterna stämmer, annars null.
+        public User? HittaUser(string namn)
+        {
+            foreach (User user in users)
+            {
+                if(user.Namn == namn)
+                {
+                    return user;
+                }
+            }
+            return null;
+        }
+        // Returnerar true om överföringen lyckades, annars false.
+        public bool OverforPengar(Account fran, Account till, decimal belopp)
+        {
+            if(belopp > 0 && fran.Saldo >= belopp)
+            {
+
+            }
+            return false;
+        }
     }
 }
