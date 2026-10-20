@@ -27,5 +27,5 @@ namespace Grupparbete1_bankomaten
         }
     }
     */
-}
+
 
