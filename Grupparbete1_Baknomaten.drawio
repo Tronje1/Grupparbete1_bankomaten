@@ -1,9 +1,278 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Sida-1" id="xLIfTJWwytRogdsc_jvr">
-    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="975" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-4" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="start" vertex="1">
+          <mxGeometry height="60" width="60" x="350" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-6" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Välkomstmeddeland" vertex="1">
+          <mxGeometry height="50" width="120" x="320" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-8" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Be om användarnamn och pinkod" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-13" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-14" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Nej" vertex="1">
+          <mxGeometry relative="1" x="0.4222" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-16" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-17" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Ja" vertex="1">
+          <mxGeometry relative="1" x="0.36" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-22" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-21" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="485" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-23" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Nej" vertex="1">
+          <mxGeometry relative="1" x="0.5619" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-25" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Skriv ut menyalternativ" vertex="1">
+          <mxGeometry height="50" width="110" x="325" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-21" parent="1" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="430" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-27" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ta inmatning från användaren med val av funktion som ska köras" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-29" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-30" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Nej" vertex="1">
+          <mxGeometry relative="1" x="0.1273" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-35" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-36" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Ja" vertex="1">
+          <mxGeometry relative="1" x="-0.2142" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Giltig inmatning" vertex="1">
+          <mxGeometry height="70" width="77.5" x="341.25" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-32" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="D3uATF5dbcEVA1TuBrMH-31" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Skriv ut fel medelande" vertex="1">
+          <mxGeometry height="50" width="120" x="460" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-31" parent="1" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;rounded=0;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="435" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-38" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-39" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.0455" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-43" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="255" y="890" />
+            </Array>
+            <mxPoint x="255" y="780" as="sourcePoint" />
+            <mxPoint x="350" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-45" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3" vertex="1">
+          <mxGeometry relative="1" x="0.4927" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-34" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Baserat på användarens inmatning" vertex="1">
+          <mxGeometry height="100" width="110" x="200" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Kör funktionen för att visa användarens saldo och konton" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Kör funktionen för överföring mellan konton" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Kör funktionen för att ta ut pengar" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-42" parent="1" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=default;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="345" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-46" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D3uATF5dbcEVA1TuBrMH-40" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="810" as="sourcePoint" />
+            <mxPoint x="325" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-49" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2" vertex="1">
+          <mxGeometry relative="1" x="0.1915" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="invänta knapp tryck på enter" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-51" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-37" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="D3uATF5dbcEVA1TuBrMH-50" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="390" y="770" as="sourcePoint" />
+            <mxPoint x="440" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-53" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-41" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="D3uATF5dbcEVA1TuBrMH-50" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="890" />
+            </Array>
+            <mxPoint x="390" y="770" as="sourcePoint" />
+            <mxPoint x="440" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-54" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-40" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="390" y="770" as="sourcePoint" />
+            <mxPoint x="630" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-55" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-50" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="D3uATF5dbcEVA1TuBrMH-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="415" />
+            </Array>
+            <mxPoint x="650" y="630" as="sourcePoint" />
+            <mxPoint x="590" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-58" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-34" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D3uATF5dbcEVA1TuBrMH-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="730" />
+              <mxPoint x="170" y="230" />
+            </Array>
+            <mxPoint x="80" y="635" as="sourcePoint" />
+            <mxPoint x="130" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-61" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="190" width="460" x="290" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-59" parent="D3uATF5dbcEVA1TuBrMH-61" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Inloggnings meny" vertex="1">
+          <mxGeometry height="30" width="60" x="360" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-68" parent="D3uATF5dbcEVA1TuBrMH-61" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="InloggMeny();" vertex="1">
+          <mxGeometry height="30" width="90" x="345" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-9" parent="D3uATF5dbcEVA1TuBrMH-61" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="3 misslyckade försök" vertex="1">
+          <mxGeometry height="70" width="70" x="160" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-18" parent="D3uATF5dbcEVA1TuBrMH-61" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="Slut" vertex="1">
+          <mxGeometry height="60" width="60" x="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-19" edge="1" parent="D3uATF5dbcEVA1TuBrMH-61" source="D3uATF5dbcEVA1TuBrMH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D3uATF5dbcEVA1TuBrMH-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-20" connectable="0" parent="D3uATF5dbcEVA1TuBrMH-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Ja" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-62" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="260" width="561.25" x="218.75" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-63" parent="D3uATF5dbcEVA1TuBrMH-62" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Val meny" vertex="1">
+          <mxGeometry height="30" width="60" x="481.25" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-69" parent="D3uATF5dbcEVA1TuBrMH-62" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ValMeny();" vertex="1">
+          <mxGeometry height="30" width="77.5" x="472.5" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bank&amp;nbsp; funktion" vertex="1">
+          <mxGeometry height="30" width="60" x="720" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-65" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-64" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="750" y="200" as="sourcePoint" />
+            <mxPoint x="732.06" y="180.95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-66" edge="1" parent="1" source="D3uATF5dbcEVA1TuBrMH-64" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="D3uATF5dbcEVA1TuBrMH-62" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="130" />
+            </Array>
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-67" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="D3uATF5dbcEVA1TuBrMH-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Rätt inlogg?" vertex="1">
+          <mxGeometry height="70" width="70" x="344" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="VisaKonton();" vertex="1">
+          <mxGeometry height="30" width="90" x="369" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Overforing();" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="TaUt();" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User Klass: string namn, int kod, list&amp;lt;konton&amp;gt;&amp;nbsp;" vertex="1">
+          <mxGeometry height="40" width="310" x="100" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Konto Klass: string namn, int saldo" vertex="1">
+          <mxGeometry height="40" width="255" x="100" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bank Klass: list&amp;lt;User&amp;gt;&lt;br&gt;&quot;funktioner&quot;" vertex="1">
+          <mxGeometry height="50" width="180" x="100" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="D3uATF5dbcEVA1TuBrMH-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fel Klass: &quot;funktioner&quot;" vertex="1">
+          <mxGeometry height="40" width="180" x="100" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="R9ir9NB0GTlHDDkgVuvW-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Utskrivar Klass: &quot;funktioner&quot;" vertex="1">
+          <mxGeometry height="50" width="180" x="294" y="1040" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

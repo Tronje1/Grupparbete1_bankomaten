@@ -26,4 +26,6 @@ namespace Grupparbete1_bankomaten
             this.Kontoer.Add(new Account(kontoNavn, 0m));
         }
     }
+    */
 }
+
