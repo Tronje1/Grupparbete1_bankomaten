@@ -68,22 +68,26 @@ namespace Grupparbete1_bankomaten
                 Console.WriteLine("Huvudmeny");
                 Console.WriteLine("1. Visa Saldon");
                 Console.WriteLine("2. Överföra Pengar");
-                Console.WriteLine("3. Avsluta");
+                Console.WriteLine("3. Ta ut Pengar");
+                Console.WriteLine("4. sätt in Pengar");
+                Console.WriteLine("5. Avsluta");
 
-                int choice = InputHelper.ReadNumber("Val: ", 1, 3, ErrorHandler.InvalidChoice);
+                int choice = InputHelper.ReadNumber("Val: ", 1, 5, ErrorHandler.InvalidChoice);
 
-                if (choice == 3)
+                if (choice == 5)
                     return;
                 switch (choice)
                 {
                     case 1: ShowBalance(user); break;
                     case 2: Transfer(user); break;
+                    case 3: Account.TaUt(user); break;
+                    case 4: Account.SetIn(user); break;
                 }
             }
         }
 
         // Skriver ut den inloggades egna konton, med nummer så de går att välja.
-        private static void ShowAccounts(User user)
+        public static void ShowAccounts(User user)
         {
             Console.WriteLine("Dina konton:");
             for (int i = 0; i < user.Kontoer.Count; i++)
@@ -140,5 +144,6 @@ namespace Grupparbete1_bankomaten
             Console.WriteLine($"Klart. {fran.KontoNamn}: {fran.Saldo} kr, {till.KontoNamn}: {till.Saldo} kr.");
             InputHelper.WaitForEnter();
         }
+
     }
 }

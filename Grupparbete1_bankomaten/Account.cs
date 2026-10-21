@@ -17,80 +17,66 @@ namespace Grupparbete1_bankomaten
             this.Saldo = saldo;
         }
 
-        public void VisaKonton() // visar hur mycket pengar du har,
+        public static void TaUt(User user)
         {
-            Console.WriteLine($"Du har {Saldo} kr i dit kontot");
-            Console.WriteLine($"Du har {SparSaldo} kr i dit sparkontot");
-        }
-        public void TaUt() // låter deig ta ut pengar.
-        {
-            int summa = int.Parse(Console.ReadLine());
-            if (summa <= Saldo)
-            {
-                Saldo -= summa;
-                Console.WriteLine($"Du tog ut {summa} kr.");
-                Console.WriteLine($"Nytt saldo: {Saldo} kr");
-            }
-            else if (summa > Saldo) // om du inte har tillräckligt med pengar.
-            {
-                ErrorHandler.Show(ErrorHandler.InvalidAmount);
-            }
-        }
-        public void SetIn() // låter dig sätta in pengar.
-        {
-            int summa = int.Parse(Console.ReadLine());
-            Saldo += summa;
-            Console.WriteLine($"Du sätte in {summa} kr.");
-            Console.WriteLine($"Nytt saldo: {Saldo} kr");
-        }
-        public void TTF() // låter dig välja att föröver mellan spar och privat konto (TTF() är inte nödvändig)
-        {
-            string vall = Console.ReadLine();
-            switch (vall)
-            {
-                case "1":
-                    SpaSaldo();
-                    break;
-                case "2":
-                    SaldoSpar();
-                    break;
-                default:
-                    ErrorHandler.Show(ErrorHandler.InvalidChoice);
-                    break;
-            }
+            Printer.ShowAccounts(user);
 
-        }
-        public bool SpaSaldo() // låter dig föra över mellan spar till pivat.
-        {
-            Console.Write("Hur mycket vill du förra övar?");
-            int summa = int.Parse(Console.ReadLine());
-            if (summa > Saldo)
+            int franNummer = InputHelper.ReadNumber("Från (nummer): ", 1, user.Kontoer.Count, ErrorHandler.InvalidChoice);
+
+            Account fran = user.Kontoer[franNummer - 1];
+
+            decimal amount = InputHelper.ReadAmount("Belopp: ", 0.01m, decimal.MaxValue, ErrorHandler.InvalidAmount);
+
+            if (amount > fran.Saldo)
             {
-                ErrorHandler.Show(ErrorHandler.InvalidAmount);
-                return false;
+                ErrorHandler.Show(ErrorHandler.InsuficientFunds);
+                InputHelper.WaitForEnter();
+                return;
             }
-            Saldo += summa;
-            SparSaldo -= summa;
-            Console.WriteLine($"Du tog ut {summa} kr.");
-            Console.WriteLine($"Nytt saldo: {Saldo} kr");
-            Console.WriteLine($"Nytt Spar saldo: {SparSaldo} kr");
-            return true;
+            fran.Saldo -= amount;
+
+            Console.WriteLine($"Klart. {fran.KontoNamn}: {fran.Saldo} kr.");
+
+            InputHelper.WaitForEnter();
         }
-        public bool SaldoSpar()// låter dig föra över mellan privat till spar.
+        public static void SetIn(User user)
         {
-            Console.Write("Hur mycket vill du förra övar?");
-            int summa = int.Parse(Console.ReadLine());
-            if (summa > Saldo)
-            {
-                ErrorHandler.Show(ErrorHandler.InvalidAmount);
-                return false;
-            }
-            Saldo -= summa;
-            SparSaldo += summa;
-            Console.WriteLine($"Du tog ut {summa} kr.");
-            Console.WriteLine($"Nytt saldo: {Saldo} kr");
-            Console.WriteLine($"Nytt Spar saldo: {SparSaldo} kr");
-            return true;
+            Printer.ShowAccounts(user);
+
+            int franNummer = InputHelper.ReadNumber("till (nummer): ", 1, user.Kontoer.Count, ErrorHandler.InvalidChoice);
+
+            Account fran = user.Kontoer[franNummer - 1];
+
+            decimal amount = InputHelper.ReadAmount("Belopp: ", 0.01m, decimal.MaxValue, ErrorHandler.InvalidChoice);
+
+            fran.Saldo += amount;
+
+            Console.WriteLine($"Klart. {fran.KontoNamn}: {fran.Saldo} kr.");
+
+            InputHelper.WaitForEnter();
         }
+
+
+        //public void TaUt() // låter deig ta ut pengar.
+        //{
+        //    int summa = int.Parse(Console.ReadLine());
+        //    if (summa <= Saldo)
+        //    {
+        //        Saldo -= summa;
+        //        Console.WriteLine($"Du tog ut {summa} kr.");
+        //        Console.WriteLine($"Nytt saldo: {Saldo} kr");
+        //    }
+        //    else if (summa > Saldo) // om du inte har tillräckligt med pengar.
+        //    {
+        //        ErrorHandler.Show(ErrorHandler.InvalidAmount);
+        //    }
+        //}
+        //public void SetIn() // låter dig sätta in pengar.
+        //{
+        //    int summa = int.Parse(Console.ReadLine());
+        //    Saldo += summa;
+        //    Console.WriteLine($"Du sätte in {summa} kr.");
+        //    Console.WriteLine($"Nytt saldo: {Saldo} kr");
+        //}
     }
 }
