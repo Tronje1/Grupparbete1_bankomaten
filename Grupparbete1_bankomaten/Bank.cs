@@ -46,7 +46,9 @@ namespace Grupparbete1_bankomaten
         {
             if(belopp > 0 && fran.Saldo >= belopp)
             {
-
+                fran.Saldo = fran.Saldo - belopp;
+                till.Saldo = till.Saldo + belopp;
+                return true;
             }
             return false;
         }
