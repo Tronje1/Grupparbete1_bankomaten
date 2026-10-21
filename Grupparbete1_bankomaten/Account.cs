@@ -9,7 +9,6 @@ namespace Grupparbete1_bankomaten
     {
         public string KontoNamn { get; set; }
         public decimal Saldo { get; set; }
-        public decimal SparSaldo { get; set; }
 
         public Account(string kontonamn, decimal saldo)
         {
