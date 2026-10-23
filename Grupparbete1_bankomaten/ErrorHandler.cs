@@ -13,7 +13,7 @@ namespace Grupparbete1_bankomaten
         // Fel vid inloggningen.
         public const string InvalidLogin = "Fel användarnamn eller kod.";
 
-        public const string TooManyAttempts = "För många felaktiga försök. Avslutar.";
+        public const string TooManyAttempts = "För många felaktiga försök. Återgår till startmenyn.";
 
         public const string InvalidCode = "Koden måste vara ett heltal.";
 

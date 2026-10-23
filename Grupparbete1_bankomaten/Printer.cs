@@ -14,14 +14,40 @@ namespace Grupparbete1_bankomaten
         // klassen har inga egna konton.
         public static void Run(List<User> users)
         {
-            Console.WriteLine("Välkommen till Bankomaten!");
+            // Startmenyn ligger före inloggningen så man kan välja att avsluta
+            // utan att först skriva in namn och kod.
+            while (true)
+            {
+                Clear();
+                Console.WriteLine("Välkommen till Bankomaten!");
+                Console.WriteLine("1. Logga in");
+                Console.WriteLine("2. Avsluta");
 
-            User? user = Login(users);
-            if (user is null)
+                int choice = InputHelper.ReadNumber("Val: ", 1, 2, ErrorHandler.InvalidChoice);
+
+                if (choice == 2)
+                {
+                    Console.WriteLine("Tack för besöket!");
+                    return;
+                }
+
+                User? user = Login(users);
+                if (user is null)
+                    continue; // För många fel: tillbaka till startmenyn.
+
+                Meny(user); // Menyn returnerar när man loggar ut.
+            }
+        }
+
+        // Rensar terminalen så den gamla utskriften inte ligger kvar ovanför
+        // menyn. Console.Clear kastar IOException när utskriften är omdirigerad
+        // (t.ex. till en fil eller ett test), så då hoppar vi över den.
+        private static void Clear()
+        {
+            if (Console.IsOutputRedirected)
                 return;
 
-            Console.WriteLine($"Inloggad som {user.Namn}.");
-            Meny(user);
+            Console.Clear();
         }
 
         // Inloggningsmenyn: frågar efter namn och kod och jämför med användarna
@@ -29,6 +55,8 @@ namespace Grupparbete1_bankomaten
         // MaxLoginAttempts gånger.
         private static User? Login(List<User> users)
         {
+            Clear();
+
             for (int attempt = 1; attempt <= MaxLoginAttempts; attempt++)
             {
                 Console.WriteLine();
@@ -45,6 +73,7 @@ namespace Grupparbete1_bankomaten
             }
 
             ErrorHandler.Show(ErrorHandler.TooManyAttempts);
+            InputHelper.WaitForEnter();
             return null;
         }
 
@@ -64,13 +93,15 @@ namespace Grupparbete1_bankomaten
         {
             while (true)
             {
+                Clear();
+                Console.WriteLine($"Inloggad som {user.Namn}.");
                 Console.WriteLine();
                 Console.WriteLine("Huvudmeny");
                 Console.WriteLine("1. Visa Saldon");
                 Console.WriteLine("2. Överföra Pengar");
                 Console.WriteLine("3. Ta ut Pengar");
                 Console.WriteLine("4. sätt in Pengar");
-                Console.WriteLine("5. Avsluta");
+                Console.WriteLine("5. Logga ut");
 
                 int choice = InputHelper.ReadNumber("Val: ", 1, 5, ErrorHandler.InvalidChoice);
 
